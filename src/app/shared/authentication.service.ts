@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from "@angular/fire/auth";
+import { AngularFireAuth } from '@angular/fire/auth';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -23,7 +23,7 @@ export class AuthenticationService {
       })
       .catch(error => {
         console.log('Something is wrong:', error.message);
-      });    
+      });
   }
 
   /* Sign in */
@@ -35,7 +35,7 @@ export class AuthenticationService {
         console.log('Successfully signed in!');
       })
       .catch(err => {
-        console.log('Something is wrong:',err.message);
+        console.log('Something is wrong:', err.message);
       });
   }
 
@@ -44,6 +44,5 @@ export class AuthenticationService {
     this.angularFireAuth
       .auth
       .signOut();
-  }  
-
+  }
 }
