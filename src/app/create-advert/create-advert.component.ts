@@ -7,9 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAdvertComponent implements OnInit {
 
+  title: String;
+  city: String;
+  owner: String;
+  bedrooms: number;
+  price: String;
+  type: String;
+  description: any;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit() {
+    console.log("submit calles");
+    let listing = {
+      title: this.title,
+      city: this.city,
+      owner: this.owner,
+      bedroomms: this.bedrooms,
+      price: this.price,
+      type: this.type,
+      description: this.description
+    };
+
   }
 
 }
