@@ -21,7 +21,7 @@ export class CreateAdvertComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log("submit calles");
+    console.log("submit calls");
     let listing = {
       title: this.title,
       city: this.city,
