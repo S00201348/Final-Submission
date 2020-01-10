@@ -21,8 +21,9 @@ export class NavbarComponent implements OnInit {
   }
   login() {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-    this.router.navigateByUrl('/home');
+    //this.router.navigateByUrl('/home');
     this.navHome();
+    console.log('You are logged in');
   }
   logout() {
     this.router.navigateByUrl('/home');
