@@ -18,6 +18,7 @@
       </li>
     </ul>
     <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item-greeting" *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</li>
       <li class="nav-item" *ngIf="!isLoggedIn()">
         <a class="nav-link pointer" (click)="login()" routerLink="/home">Login</a>
       </li>
@@ -27,4 +28,3 @@
     </ul>
   </div>
 </nav>
-<h1 *ngIf="authenticationService.userData | async">Hello {{ (authenticationService.userData | async)?.email }}</h1>

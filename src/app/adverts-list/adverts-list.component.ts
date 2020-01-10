@@ -7,7 +7,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdvertsListComponent implements OnInit {
 
-  constructor() { }
+
+  adverts = []
+
+  constructor() {
+
+    var advert1 = {
+      title: 'Advert 1',
+      city: 'City 1',
+      owner: 'Owner 1',
+      bedroomms: 2,
+      price: 30,
+      type: 'Double',
+      description: 'Description of Advert 1'
+    }
+
+    var advert2 = {
+      title: 'Advert 2',
+      city: 'City 2',
+      owner: 'Owner 2',
+      bedroomms: 1,
+      price: 20,
+      type: 'Single',
+      description: 'Description of Advert 2'
+    }
+
+    this.adverts = [advert1, advert2]
+
+   }
 
   ngOnInit() {
   }

@@ -1,1 +1,7 @@
-<p>adverts-list works!</p>
+<div>
+    <div *ngFor="let advert of adverts" class="column">
+        <div class="card">
+            <a class="nav-link" routerLink="/app-advert-detail">{{advert.title}}</a>
+        </div>
+    </div>
+</div>
