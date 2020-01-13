@@ -16,7 +16,7 @@ export class AdvertsListComponent implements OnInit {
       title: 'Advert 1',
       city: 'City 1',
       owner: 'Owner 1',
-      bedroomms: 2,
+      bedrooms: 2,
       price: 30,
       type: 'Double',
       description: 'Description of Advert 1'
@@ -26,7 +26,7 @@ export class AdvertsListComponent implements OnInit {
       title: 'Advert 2',
       city: 'City 2',
       owner: 'Owner 2',
-      bedroomms: 1,
+      bedrooms: 1,
       price: 20,
       type: 'Single',
       description: 'Description of Advert 2'

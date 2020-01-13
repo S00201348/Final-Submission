@@ -2,6 +2,11 @@
     <div *ngFor="let advert of adverts" class="column">
         <div class="card">
             <a class="nav-link" routerLink="/app-advert-detail">{{advert.title}}</a>
+            City: {{advert.city}} <b></b>
+            Owner: {{advert.owner}}<b></b>
+            Bedrooms: {{advert.bedrooms}}<b></b>
+            Price: {{advert.price}}€<b></b>
+            {{advert.description}}
         </div>
     </div>
 </div>
